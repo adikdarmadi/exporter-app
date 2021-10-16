@@ -1,24 +1,28 @@
-# Simple Java application using Maven
+#Exporter app
+Aplikasi ini dibuat dengan menggunakan java
+untuk menjalankan aplikasi ini laptop anda harus terinstal java minimal versi 1.8
 
-This code is part of a blog post.
+Aplikasi ini telah di test menggunakan sistem operasi windows
 
-The link to the blog post is given here.
-[https://adityasridhar.com/posts/how-to-get-started-with-maven](https://adityasridhar.com/posts/how-to-get-started-with-maven)
+Contoh penggunaan :
+Download file ```exporter-jar-with-dependencies.jar``` pada laptop anda,
+kemuadian di dalam direktory file ```exporter-jar-with-dependencies.jar``` berada ketikan perintah
+dibawah ini untuk menjalan kan pengujian
 
-Read the blog post to make the best use of this repo :)
+- Menampilkan help 
+    ```java -jar exporter-jar-with-dependencies.jar -h```
+- Mengkonversi menjadi file json
+    ```java -jar exporter-jar-with-dependencies.jar -f C:\Users\darma\OneDrive\Desktop\sample-log-2.log -t text``` 
+- Mengkonversi menjadi file text
+    ```java -jar exporter-jar-with-dependencies.jar -f C:\Users\darma\OneDrive\Desktop\sample-log-2.log -t json```
+- Jika user tidak memasukan salah satu flag, maka default outputnya adalah PlainText.
+    ```java -jar exporter-jar-with-dependencies.jar -f C:\Users\darma\OneDrive\Desktop\sample-log-2.log``` 
+-User juga bisa memilih dimana dia akan meletakan file output tersebut. Dengan menggunakan flag -o.
+    ```java -jar exporter-jar-with-dependencies.jar -f C:\Users\darma\OneDrive\Desktop\sample-log-2.log -o C:\Users\darma\OneDrive\Desktop\result.txt```
+    atau
+    ```java -jar exporter-jar-with-dependencies.jar -f C:\Users\darma\OneDrive\Desktop\sample-log-2.log -t json -o C:\Users\darma\OneDrive\Desktop\result.json```
+    
 
-## Pre-requisite
 
-Ensure you have maven installed in your system. You can install it from [https://maven.apache.org/](https://maven.apache.org/)
-
-Also ensure maven path is set in you System so that you can run `mvn` commands
-
-## Cloning the code to your local
-
-Clone this code to your local using the following command
-
-```bash
-git clone https://github.com/aditya-sridhar/first-maven-app.git
-```
-
-Or you can import the project into an IDE of your choice.
+Hasil Pengujian menggunakan laptop windows
+![alt text](https://i.ibb.co/7VqS7cf/result-image.png)
