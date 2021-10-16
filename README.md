@@ -7,8 +7,8 @@ untuk menjalankan aplikasi ini laptop anda harus terinstal java minimal versi 1.
 Aplikasi ini telah di test menggunakan sistem operasi windows
 
 Contoh penggunaan :
-Download file ```exporter-jar-with-dependencies.jar``` pada laptop anda,
-kemuadian di dalam direktory file ```exporter-jar-with-dependencies.jar``` berada ketikan perintah
+Download file ```exporter-jar-with-dependencies.jar``` ,
+kemuadian di dalam direktory file ```exporter-jar-with-dependencies.jar``` berada, ketikan perintah
 dibawah ini untuk menjalan kan pengujian
 
 - Menampilkan help 
